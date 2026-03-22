@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sensor-gaps"
+version = "0.1.0"
+description = "Small pandas helpers for resampling sensor readings and finding gaps"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "marnix" }]
+dependencies = ["pandas"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
